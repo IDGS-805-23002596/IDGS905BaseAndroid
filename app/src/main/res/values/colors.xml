@@ -4,4 +4,16 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background">#24B5CC</color>
     <color name="teal_200">#A594E6</color>
+    <color name="negro">#000000</color>
+    <color name="cafe">#945200</color>
+    <color name="rojo">#ff0000</color>
+    <color name="naranja">#ff8021</color>
+    <color name="amarillo">#ffff00</color>
+    <color name="verde">#09c302</color>
+    <color name="azul">#4e67c8</color>
+    <color name="morado">#7030a0</color>
+    <color name="gris">#7f7f7f</color>
+    <color name="blanco">#D3D3D3</color>
+    <color name="oro">#ebcd96</color>
+    <color name="plata">#93989B</color>
 </resources>

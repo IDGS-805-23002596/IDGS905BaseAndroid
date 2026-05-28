@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.idgs905baseandroid.Distancia.Distancia
 import com.example.idgs905baseandroid.Ejemplo1.ejemplo1
 import com.example.idgs905baseandroid.Ejemplo2.Ejemplo2
+import com.example.idgs905baseandroid.ExamenResistencia.ExamenActivity
 import com.example.idgs905baseandroid.MultiplicaAxB.AxBActivity
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val btnDistancia = findViewById<Button>(R.id.btnDistancia)
         val btnEjemplo2 = findViewById<Button>(R.id.btn2)
         val btnAxB = findViewById<Button>(R.id.btnAxB)
+        val btnExamen = findViewById<Button>(R.id.btnExamen)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -35,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         btnEjemplo1.setOnClickListener{ navigateUpToejemplo1() }
         btnEjemplo2.setOnClickListener{ navigateUpToEjemplo2() }
         btnAxB.setOnClickListener{ navigateUpToAxB() }
+        btnExamen.setOnClickListener{ navigateUpToExamen() }
     }
 
     fun navigateUpToejemplo1(){
@@ -60,6 +63,13 @@ class MainActivity : AppCompatActivity() {
 
     fun navigateUpToAxB(){
         val intent = Intent(this, AxBActivity::class.java)
+        startActivity(
+            intent
+        )
+    }
+
+    fun navigateUpToExamen(){
+        val intent = Intent(this, ExamenActivity::class.java)
         startActivity(
             intent
         )

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Idgs905BaseAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".ExamenResistencia.ExamenActivity"
+            android:exported="false" />
+        <activity
             android:name=".MultiplicaAxB.ResultActivity"
             android:exported="false" />
         <activity
